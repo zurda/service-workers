@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Worker Science Lab!</title>
+</head>
+<body>
+    <button onclick="clicked()">Click</button>
+</body>
+    <script>
+        function clicked() {
+            console.log('button clicked')
+        }
+
+        navigator.serviceWorker.register('/sw.js');
+
+
+        // const worker = new Worker('/worker.js');
+    </script>
+</html>
